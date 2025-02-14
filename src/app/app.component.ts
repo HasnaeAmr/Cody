@@ -31,6 +31,11 @@ export class AppComponent {
     title: "Ang 2",
     description: "dessc 2 dessc 2 desscdes scdess cdesscdesscdesscdesscdesscdesscdesscdesscdesscdesscdesscdessc"
 
+  },
+  {
+    title: "Ang 3",
+    description: "dessc 2 dessc 2 desscdes scdess cdesscdesscdesscdesscdesscdesscdesscdesscdesscdesscdesscdessc"
+
   }
 ]
 

@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <app-card [card]="cards[0]" (titleEvent)="changeTitle($event)"></app-card>
-  <app-card [card]="cards[1]"></app-card>
-  <app-card [card]="cards[0]"></app-card>
+  @for (card of cards; track card.title){
+    <app-card [card]="card"></app-card>
+  }
 </div>
