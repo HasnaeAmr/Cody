@@ -11,6 +11,7 @@ import { Icard } from '../app.component.model';
 export class CardComponent {
   @Input() card: Icard ={} as Icard;
   @Output() titleEvent = new EventEmitter<string>();
+  @Input({required: true}) index!: number;
 
   viewFunction(value: string) {
     this.titleEvent.emit(value);

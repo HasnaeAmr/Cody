@@ -23,16 +23,19 @@ export class AppComponent {
   }
   readonly cards: Array<Icard> = [
   {
+    id: 1,
     title: "Ang 1",
     description: "dessc 1 dessc 1 desscdes scdess cdesscdesscdesscdesscdesscdesscdesscdesscdesscdesscdesscdessc"
 
   },
   {
+    id: 2,
     title: "Ang 2",
     description: "dessc 2 dessc 2 desscdes scdess cdesscdesscdesscdesscdesscdesscdesscdesscdesscdesscdesscdessc"
 
   },
   {
+    id: 3,
     title: "Ang 3",
     description: "dessc 2 dessc 2 desscdes scdess cdesscdesscdesscdesscdesscdesscdesscdesscdesscdesscdesscdessc"
 

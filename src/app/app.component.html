@@ -1,5 +1,17 @@
+<style>
+  .first-one{
+    .card-body{
+      background-color: rgb(255, 173, 248);
+    }
+  }
+</style>
 <div class="container-fluid">
-  @for (card of cards; track card.title){
-    <app-card [card]="card"></app-card>
+  @for (card of cards; track card.id; let index = $index; let count = $count;let first = $first; let last=$last){
+    Courses Count : {{count}}
+    <app-card [card]="card" [index]="index"
+    [class.first-one]="first"
+    ></app-card>
+  } @empty {
+    <h1>No cards found !</h1>
   }
 </div>
