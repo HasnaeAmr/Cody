@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CardComponent } from './card/card.component';
 import { Icard } from './app.component.model';
+import { PipeyPipe } from './pipey.pipe';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CardComponent],
+  imports: [RouterOutlet, CardComponent, PipeyPipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
