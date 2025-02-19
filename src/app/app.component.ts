@@ -45,4 +45,7 @@ export class AppComponent {
   changeTitle(newTitle: string){
     console.log("i have received the new title! dw , it s : ", newTitle)
   }
+  trackFunction(index: number, card: Icard): number{
+    return card.id;
+  }
 }

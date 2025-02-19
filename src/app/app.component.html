@@ -6,7 +6,7 @@
   }
 </style>
 <div class="container-fluid">
-  @for (card of cards; track card.id; let index = $index; let count = $count;let first = $first; let last=$last){
+  @for (card of cards; track trackFunction; let index = $index; let count = $count;let first = $first; let last=$last){
     Courses Count : {{count}}
     <app-card [card]="card" [index]="index"
     [class.first-one]="first"
