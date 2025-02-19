@@ -8,6 +8,9 @@
 <div class="container-fluid">
   @for (card of cards; track trackFunction; let index = $index; let count = $count;let first = $first; let last=$last){
     Courses Count : {{count}}
+    @if (card.id == 2) {
+      <h4>Cardy with id 2 !</h4>
+    }
     <app-card [card]="card" [index]="index"
     [class.first-one]="first"
     ></app-card>
